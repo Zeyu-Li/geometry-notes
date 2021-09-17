@@ -1,0 +1,164 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Geometry Notes}
+\author{Andrew }
+\date{September 2021}
+
+\begin{document}
+
+% \maketitle
+
+\section{Basics}
+\subsection{Logic \& Proofs}
+
+\begin{itemize}
+  \item If then: \textbf{antecedent} $\to$ \textbf{consequent} [$P\to Q$]
+  \item Converse: consequent $\to$antecedent [$Q\to P$]
+  \item Contrapositive  [$\sim Q\to \sim P$]
+  \item Negation/denial [$\sim (P\to Q) \iff P\land \sim Q$]
+  \item If and only if statements [$P\iff Q$] is logically equivalent to [$P\to Q$ and $Q\to P$]
+\end{itemize}
+
+\subsubsection{Proof Strategies }
+
+\begin{itemize}
+  \item Directly (usually involves a few cases)
+  \item Contrapositive
+  \item Contradiction: proof there is a contradiction if you assume the negation
+  \item Counterexample (only 1 is needed)
+  \item Bonus: induction $\to$ prove for base case, assume for n, prove for n+1
+\end{itemize}
+
+\subsection{Basics}
+\subsubsection{Notation}
+
+\begin{itemize}
+  \item Ray $\overrightarrow{AB}$ goes from A past B to infinity
+  \item Line $\overleftrightarrow{AB}$ goes past A and B to infinity
+  \item $AB$ is just a line going from A to B
+  \item Lines that have no intersection point are parallel and distinct [$P|| Q$]
+  \item Lines that have a intersection point are non-parallel [$P\nparallel Q$]
+  \item More than 1 intersection point is considered the same line
+  \item Consider line S to be an infinite set of points, if point X in line S, then it is $X\in S$
+  \item Intersection of lines will be $S\cap T$ 
+  \item If lines do not intersect then it is said that $S\cap T=\emptyset$ (ie the intersection of the two sets/lines is the trivial/null set)
+\end{itemize}
+
+
+\subsubsection{Angles}
+
+\begin{itemize}
+  \item A full rotation is $360^{\circ}$
+  \item A line is $180^{\circ}$
+  \item Right triangle is $90^{\circ}$
+  \item $\angle BAC$ is the interior of the rays $\overrightarrow{AB}$ and $\overrightarrow{AC}$. Shorthand is $\angle A$
+  \item Outside angle is the reflex angle
+  \item When two lines cross, there are 2 pairs of opposite angles (this is known at the supplementary angle)
+\end{itemize}
+
+The following are two lines l and m with a \textbf{transversal} t
+
+\noindent\includegraphics{pic1.png}
+\noindent\includegraphics{pic2.png}
+
+\subsubsection{Shapes}
+\begin{itemize}
+  \item Circle at point A with radius r is $C(A,r)$
+  \item $\triangle ABC$ have vertices A, B, C 
+  \item Names for the sides of a triangle are lower case and are the opposite to the angle it corresponds with
+  \item The sum of the lengths of any two sides of a triangle is always greater than the length of the remaining side
+  \item The sum of the lengths of any two sides of a triangle is always greater than the length of the remaining side
+\end{itemize}
+
+\section{Intro}
+\subsubsection{Axioms}
+\begin{itemize}
+  \item \textbf{The Parallel Postulate}: for alternate angles image above, if angles 1 and 2 sum to less than 180 then l,m must intersect to the right of t 
+  \item \textbf{Playfair's Axiom}: Given line l and point P, there exists only 1 line though P parallel to l
+\end{itemize}
+\subsubsection{Big Boy Theorems}
+\textbf{The Transversal Angles Theorem}: if any of the following is true then they are are true about the transversal t that passes two distinct lines l and m
+\begin{enumerate}
+    \item The adjacent angles sum to $180^{\circ}$
+    \item The alternate angles are equal
+    \item The alternate exterior angles are equal
+    \item The corresponding angles are equal
+    \item The lines l and m are parallel
+\end{enumerate}
+
+\noindent \textbf{The Triangle 180 Theorem}: The interior angles of a triangle sum to 180
+
+\includegraphics{pic3.png}
+\begin{itemize}
+  \item Blue = interior angles
+  \item Green = opposite to its interior
+  \item Red = exterior angles
+\end{itemize}
+\noindent exterior angle of a triangle is equal to the sum of the two interior angles on the opposite side
+
+\section{Congruent }
+Congruent occurs when two objects are the same but just different position in space, possibly rotated or flipped
+\begin{itemize}
+  \item $\triangle ABC \equiv \triangle DEF$ iff all of the following hold
+  \item $\angle A \equiv \angle D$ and $\angle B \equiv \angle E$ and $\angle C \equiv \angle F$ 
+  \item $BC \equiv EF$ and $AC \equiv DF$ and $AB \equiv DE$ 
+\end{itemize}
+\subsubsection{Triangle Congruences}
+\begin{itemize}
+  \item SAS
+  \item ASA
+  \item AAS
+  \item SSS
+  \item ASS* (For second side (S) to be longer than the first)
+  \item RSH
+\end{itemize}
+If an triangle is \textbf{isosceles} if two side are equal length (ie 2 congruent sides)
+
+\noindent \textbf{The Angle Side Inequality Theorem}: For triange ABC, $\angle B > \angle C \iff AC > AB$
+
+\subsubsection{Right Triangles}
+The oppose of the 90 degree change of the right triangle is the \textbf{hypotenuse}
+
+\noindent\includegraphics{pic4.png}
+\noindent Trivial by inspection (Above)
+
+
+\noindent\includegraphics{pic5.png}
+\noindent Red is \textbf{altitude}, green is \textbf{median}, and purple is \textbf{angle bisector}
+
+\noindent\textbf{The Isosceles Implies Theorem}: For isosceles triangle ABC, the median from A, altitude, and the bisector of angle A are all the same
+
+\noindent\textbf{The implies Isosceles Theorem}: Reverse of the previous but only two of the three are required to imply the last
+
+\subsection{Quadrilaterals}
+\begin{itemize}
+  \item Order matters when naming quads
+  \item 3 Types, convex and non-convex that are regular and non-simple
+  \item Convex have 2 interior diagonals, non-convex has 1 interior 1 exterior and non-simple have 2 exterior
+  \item Parallelogram is a quadrilateral whose opposite sides are parallel
+  \item Simple quadrilaterals have interior angles than sum up to 360
+  \item Non-simple quadrilaterals sum to $< 360$
+\end{itemize}
+
+\noindent \textbf{Parallelogram Implies Theorems}: For parallelogram ABCD
+\begin{enumerate}
+    \item Opposite sides and angles are congruent
+    \item The diagonals bisect each other 
+\end{enumerate}
+
+\noindent \textbf{Implies Parallelogram Theorems}: A simple parallelogram ABCD if any of the following conditions are meet
+\begin{enumerate}
+    \item Opposite sides or angles are congruent
+    \item The diagonals bisect each other 
+    \item One pair of opposite sides are parallel and congruent
+\end{enumerate}
+
+\noindent \textbf{The Midline Theorem}: If points P and Q are midpoints of AB and AC respectably, then for $\triangle ABC$, $PQ||BC$ and is half the length of BC [$PQ\overset{\shortparallel}{=}\frac{BC}{2}$]
+
+\noindent \textbf{The Midpoint Theorem}: Similar to Midline theorem but instead of point Q, we take line l that is parallel to BC and intercepts P. This implies that the new point Q is midpoint of AC
+
+\end{document}
